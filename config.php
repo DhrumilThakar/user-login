@@ -7,7 +7,7 @@ $dbname = "user_db";
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
-if ($conn->conntect_error) {
-    die("Connection failed: " .$conn->connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
